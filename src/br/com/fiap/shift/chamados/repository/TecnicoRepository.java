@@ -17,7 +17,7 @@ public class TecnicoRepository {
         tecnicos.add(new Tecnico(9L, "Victor Guilherme Sudré Sobrinho"));
     }
 
-    public static Tecnico findById(int id) {
+    public static Tecnico findById(long id) {
         return tecnicos.stream().filter(s -> s.getId() == id).findFirst().orElse(null);
     }
 }

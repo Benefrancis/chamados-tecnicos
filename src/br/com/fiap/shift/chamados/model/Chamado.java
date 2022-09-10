@@ -60,17 +60,11 @@ public class Chamado {
         return numero;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
 
     public String getTitulo() {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
 
     public String getDescricao() {
         return descricao;
@@ -96,17 +90,11 @@ public class Chamado {
         return solicitante;
     }
 
-    public void setSolicitante(Solicitante solicitante) {
-        this.solicitante = solicitante;
-    }
 
     public ZonedDateTime getDataAbertura() {
         return dataAbertura;
     }
 
-    public void setDataAbertura(ZonedDateTime dataAbertura) {
-        this.dataAbertura = dataAbertura;
-    }
 
     public ZonedDateTime getDataPrimeiroAtendimento() {
         return dataPrimeiroAtendimento;

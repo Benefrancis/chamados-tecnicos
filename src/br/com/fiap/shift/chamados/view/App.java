@@ -35,7 +35,7 @@ public class App {
 
         ChamadoController controller = new ChamadoController();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("**********************************************\n");
+        System.out.println("**************************************************************\n");
         System.out.println("   -     CONSULTANDO CHAMADO TÉCNICO      -   \n");
 
         System.out.println("INFORME O NÚMERO DO TIKET ");
@@ -54,7 +54,7 @@ public class App {
     public static void abrirChamado() {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("****************************************\n");
+        System.out.println("**************************************************************");
         System.out.println("   -     ABRIR CHAMADO TÉCNICO      -   \n");
 
         System.out.println("Informe o Título para o Chamado Técnico");
