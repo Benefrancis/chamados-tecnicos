@@ -44,7 +44,11 @@ public class App {
         Chamado chamado = controller.findById(tiket);
 
         if (chamado != null) {
-            System.out.println(chamado);
+           // System.out.println(chamado);
+
+            ChamadoView view = new ChamadoView();
+            view.exibe(chamado);
+
         } else {
             System.out.println("Chamado não encontrado");
         }

@@ -19,7 +19,7 @@ public class Chamado {
 
     // Pessoas
     private Tecnico tecnico;
-    private Solicitante solicitante;
+    private Pessoa solicitante;
 
     // Datas importantes
     private ZonedDateTime dataAbertura;
@@ -86,7 +86,7 @@ public class Chamado {
         this.tecnico = tecnico;
     }
 
-    public Solicitante getSolicitante() {
+    public Pessoa getSolicitante() {
         return solicitante;
     }
 
