@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SolicitanteRepository implements Repository<Solicitante> {
-    private static List<Solicitante> solicitantes;
+    private static final List<Solicitante> solicitantes;
 
     static {
         solicitantes = new ArrayList<>();

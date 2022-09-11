@@ -13,11 +13,11 @@ public class Chamado implements Model<Chamado> {
     // Dados básicos
     private long id;
     private String numero;
-    private String titulo;
+    private final String titulo;
     private String descricao;
     // Pessoas
     private Tecnico tecnico;
-    private Pessoa solicitante;
+    private final Pessoa solicitante;
 
     // Datas importantes
     private ZonedDateTime dataAbertura;

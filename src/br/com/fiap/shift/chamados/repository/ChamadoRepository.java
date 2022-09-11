@@ -13,7 +13,7 @@ public class ChamadoRepository implements Repository<Chamado> {
 
     public static TecnicoRepository tecnicoRepo = new TecnicoRepository();
 
-    private static List<Chamado> chamados;
+    private static final List<Chamado> chamados;
 
     static {
         chamados = new ArrayList<>();
