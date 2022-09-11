@@ -11,7 +11,8 @@ public class Pessoa implements Model<Pessoa> {
         this.nome = nome;
     }
 
-    protected Pessoa() {}
+    protected Pessoa() {
+    }
 
     public long getId() {
         return id;

@@ -8,15 +8,13 @@ import java.util.Random;
 
 public class Chamado implements Model<Chamado> {
 
+    // Histórico
+    private final List<Ocorrencia> ocorrencias = new ArrayList<>();
     // Dados básicos
     private long id;
     private String numero;
     private String titulo;
     private String descricao;
-
-    // Histórico
-    private final List<Ocorrencia> ocorrencias = new ArrayList<>();
-
     // Pessoas
     private Tecnico tecnico;
     private Pessoa solicitante;

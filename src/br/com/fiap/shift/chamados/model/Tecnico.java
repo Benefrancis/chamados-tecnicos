@@ -5,7 +5,7 @@ public class Tecnico extends Pessoa {
         super(id, nome);
     }
 
-    public Tecnico(){
+    public Tecnico() {
         super();
     }
 }
