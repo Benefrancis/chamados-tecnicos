@@ -4,7 +4,7 @@ import br.com.fiap.shift.chamados.model.Chamado;
 import br.com.fiap.shift.chamados.repository.ChamadoRepository;
 import br.com.fiap.shift.chamados.service.ChamadoService;
 
-public class ChamadoController {
+public class ChamadoController implements Controller<Chamado> {
 
     ChamadoService service = new ChamadoService();
     ChamadoRepository repo = new ChamadoRepository();

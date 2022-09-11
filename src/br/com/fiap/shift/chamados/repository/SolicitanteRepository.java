@@ -5,7 +5,7 @@ import br.com.fiap.shift.chamados.model.Solicitante;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SolicitanteRepository {
+public class SolicitanteRepository implements Repository<Solicitante> {
     private static List<Solicitante> solicitantes;
 
     static {
@@ -22,7 +22,8 @@ public class SolicitanteRepository {
         solicitantes.add(new Solicitante(9L, "Victor Guilherme Sudré Sobrinho"));
     }
 
-    public static Solicitante findById(int id) {
+    @Override
+    public Solicitante findById(Long id) {
         return solicitantes.stream().filter(s -> s.getId() == id).findFirst().orElse(null);
     }
 }

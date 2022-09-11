@@ -5,7 +5,7 @@ import br.com.fiap.shift.chamados.model.Tecnico;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TecnicoRepository {
+public class TecnicoRepository implements Repository<Tecnico> {
     private static final List<Tecnico> tecnicos;
 
     static {
@@ -17,7 +17,8 @@ public class TecnicoRepository {
         tecnicos.add(new Tecnico(9L, "Victor Guilherme Sudré Sobrinho"));
     }
 
-    public static Tecnico findById(long id) {
+    @Override
+    public Tecnico findById(Long id) {
         return tecnicos.stream().filter(s -> s.getId() == id).findFirst().orElse(null);
     }
 }

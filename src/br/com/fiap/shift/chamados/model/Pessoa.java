@@ -1,6 +1,6 @@
 package br.com.fiap.shift.chamados.model;
 
-public class Pessoa {
+public class Pessoa implements Model<Pessoa> {
 
     private long id;
 

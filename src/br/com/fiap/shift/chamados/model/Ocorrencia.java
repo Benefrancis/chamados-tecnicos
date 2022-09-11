@@ -2,7 +2,7 @@ package br.com.fiap.shift.chamados.model;
 
 import java.time.ZonedDateTime;
 
-public class Ocorrencia {
+public class Ocorrencia implements Model<Ocorrencia> {
 
     private long id;
 

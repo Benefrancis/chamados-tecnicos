@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Chamado {
+public class Chamado implements Model<Chamado> {
 
     // Dados básicos
     private long id;
