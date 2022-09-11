@@ -6,7 +6,7 @@ public class Ocorrencia implements Model<Ocorrencia> {
 
     private long id;
 
-    private long chamado_id;
+    private long chamado;
 
     private String descricao;
 
@@ -23,13 +23,14 @@ public class Ocorrencia implements Model<Ocorrencia> {
         this.id = id;
     }
 
-    public long getChamado_id() {
-        return chamado_id;
+    public long getChamado() {
+        return chamado;
     }
 
-    public void setChamado_id(long chamado_id) {
-        this.chamado_id = chamado_id;
+    public void setChamado(long id) {
+        this.chamado = id;
     }
+
 
     public String getDescricao() {
         return descricao;
@@ -54,4 +55,5 @@ public class Ocorrencia implements Model<Ocorrencia> {
     public void setData(ZonedDateTime data) {
         this.data = data;
     }
+
 }
